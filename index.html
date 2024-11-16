@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoteKeeper</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!--Box-icons' link-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Pop-op-->
+    <div class="popup-box">
+      <div class="popup">
+        <div class="content">
+          <header>
+            <p>New Note</p>
+            <i class="bx bx-x"></i>
+          </header>
+          <form>
+            <!-- Title -->
+            <div class="row title">
+              <label>Title</label>
+              <input type="text" />
+            </div>
+            <!-- Description -->
+            <div class="row description">
+              <label>Description</label>
+              <textarea></textarea>
+            </div>
+            <button type="submit">Add New Note</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <!-- The part in which we add note -->
+      <li class="add-box">
+        <div class="icon">
+          <i class="bx bx-plus"></i>
+        </div>
+        <p>Add new note</p>
+      </li>
+      <!-- Note -->
+      <li class="note">
+        <div class="details">
+          <p>Title</p>
+          <span>Description</span>
+        </div>
+
+        <div class="bottom-content">
+          <span>Date</span>
+          <div class="settings">
+            <i class="bx bx-dots-horizontal-rounded"></i>
+            <ul class="menu">
+              <li><i class="bx bx-edit"></i> Edit</li>
+              <li><i class="bx bx-trash"></i> Delete</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </div>
+
+    <!-- * Js Bağlantı -->
+    <script src="./main.js"></script>
+  </body>
+</html>
